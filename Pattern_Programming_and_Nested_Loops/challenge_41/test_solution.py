@@ -1,0 +1,13 @@
+# test_solution.py
+import unittest
+from solution import number_to_words
+
+class TestNumberToWords(unittest.TestCase):
+    def test_270176(self):
+        self.assertEqual(number_to_words(270176), "Two Seven Zero One Seven Six")
+
+    def test_123(self):
+        self.assertEqual(number_to_words(123), "One Two Three")
+
+if __name__ == "__main__":
+    unittest.main()
